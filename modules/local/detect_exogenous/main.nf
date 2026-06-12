@@ -1,6 +1,6 @@
 process DETECT_EXOGENOUS {
 
-  label 'process_low'
+  label 'process_medium'
   publishDir params.outdir, mode: "copy"
 
   container 'docker://quay.io/biocontainers/mulled-v2-0697a5880de9863c66cba89c8310687052a940fc:c72ea422cf70582757ae5648f79b19857320259b-0'

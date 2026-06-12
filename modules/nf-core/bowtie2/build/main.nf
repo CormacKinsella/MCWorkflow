@@ -20,7 +20,6 @@ process BOWTIE2_BUILD {
     script:
     def args = task.ext.args ?: ''
     """
-    mkdir bowtie2
     bowtie2-build $args --threads $task.cpus \$(basename ${fasta}) \$(basename ${fasta})
     """
 
